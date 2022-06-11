@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSecondary"
+    tools:context=".ui.activities.LoginActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_header_image"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/auth_header_image_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/content_description"
+            android:scaleType="fitXY"
+            android:src="@drawable/auth_screens_background" />
+
+        <com.becom.utils.BCTextViewBold
+            android:id="@+id/tv_login_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="@dimen/splash_title_text_size"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"/>
+
+    </FrameLayout>
+    
+    <com.becom.utils.BCTextViewBold
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="@string/title_login"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="@dimen/title_textSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fl_header_image"
+        app:layout_constraintEnd_toEndOf="parent" />
+    
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="@dimen/margin_right"
+        android:hint="@string/et_hint_email_id"
+        android:textColorHint="?attr/colorOnSecondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+        <com.becom.utils.BCEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="@dimen/et_padding"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="@dimen/et_textSize" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/margin_right"
+        android:hint="@string/et_hint_password"
+        android:textColorHint="?attr/colorOnSecondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_email">
+
+        <com.becom.utils.BCEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:padding="@dimen/et_padding"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="@dimen/et_textSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.becom.utils.BCTextView
+        android:id="@+id/tv_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:padding="@dimen/clickable_text_view_padding"
+        android:text="@string/lbl_forgot_password"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="@dimen/forgot_password_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintTop_toBottomOf="@id/til_password" />
+
+    <com.becom.utils.BCButton
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="@dimen/margin_right"
+        android:background="@drawable/button_background"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingTop="@dimen/btn_padding"
+        android:paddingBottom="@dimen/btn_padding"
+        android:text="@string/btn_lbl_login"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="@dimen/btn_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_forgot_password" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login">
+
+        <com.becom.utils.BCTextView
+            android:id="@+id/tv_don_t_have_an_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="@dimen/clickable_text_view_padding"
+            android:text="@string/don_t_have_and_account"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="@dimen/lbl_text_view_textSize" />
+
+        <com.becom.utils.BCTextViewBold
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="@dimen/clickable_text_view_padding"
+            android:text="@string/register"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="@dimen/lbl_text_view_textSize" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

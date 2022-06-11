@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_add_product"
+        android:icon="@drawable/ic_vector_product"
+        android:title="@string/action_add_product"
+        android:iconTint="?attr/colorOnPrimary"
+        app:showAsAction="always" />
+
+</menu>

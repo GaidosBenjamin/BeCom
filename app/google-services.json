@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1094910289657",
+    "project_id": "becom-f527e",
+    "storage_bucket": "becom-f527e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094910289657:android:e32ea1fac6f3f35bfee428",
+        "android_client_info": {
+          "package_name": "com.becom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094910289657-342fn68kosid7nqm26la2i3bibc9aoin.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.becom",
+            "certificate_hash": "5c52806c7d5e2f45db7220fb4953e1d2dee83ad5"
+          }
+        },
+        {
+          "client_id": "1094910289657-i6eefoo8n0fghapg9j3okjh0o9k6t431.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAwTIQtBK3shZCrW57NIEH2bQ3JM8VSbY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094910289657-i6eefoo8n0fghapg9j3okjh0o9k6t431.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
