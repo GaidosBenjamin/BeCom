@@ -16,6 +16,31 @@
         android:theme="@style/Theme.BeCom"
         tools:targetApi="31">
         <activity
+            android:name=".ui.activities.SoldProductDetailsActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.BeCom.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.MyOrdersActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.BeCom.NoActionBar" />
+        <activity
+            android:name=".ui.activities.CheckoutActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.BeCom.NoActionBar" />
+        <activity
+            android:name=".ui.activities.AddEditAddressActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.BeCom.NoActionBar" />
+        <activity
+            android:name=".ui.activities.AddressListActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.BeCom.NoActionBar" />
+        <activity
             android:name=".ui.activities.CartListActivity"
             android:exported="false"
             android:screenOrientation="fullSensor"

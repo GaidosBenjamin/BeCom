@@ -1,5 +1,6 @@
 package com.becom.ui.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -10,6 +11,7 @@ import com.becom.firestore.FirestoreClass
 import com.becom.model.CartItem
 import com.becom.model.Product
 import com.becom.ui.adapters.CartItemsListAdapter
+import com.becom.utils.Constants
 import kotlinx.android.synthetic.main.activity_cart_list.*
 import kotlinx.android.synthetic.main.activity_product_details.*
 
@@ -23,6 +25,12 @@ class CartListActivity : BaseActivity() {
         setContentView(R.layout.activity_cart_list)
 
         setUpActionBar()
+
+        btn_checkout.setOnClickListener {
+            val intent = Intent(this@CartListActivity, AddressListActivity::class.java)
+            intent.putExtra(Constants.EXTRA_SELECT_ADDRESS, true)
+            startActivity(intent)
+        }
     }
 
     private fun setUpActionBar() {
@@ -62,7 +70,7 @@ class CartListActivity : BaseActivity() {
 
             rv_cart_items_list.layoutManager = LinearLayoutManager(this@CartListActivity)
             rv_cart_items_list.setHasFixedSize(true)
-            val cartListAdapter = CartItemsListAdapter(this@CartListActivity, cartList)
+            val cartListAdapter = CartItemsListAdapter(this@CartListActivity, cartList, true)
             rv_cart_items_list.adapter = cartListAdapter
 
             var subTotal: Double = 0.0
