@@ -166,7 +166,7 @@
                         android:id="@+id/tv_product_item_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/item_value_text_color"
+                        android:textColor="?attr/colorOnPrimary"
                         android:textSize="@dimen/sold_details_lbl_textSize"
                         tools:text="Name" />
 
@@ -175,7 +175,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/rv_item_price_marginTop"
-                        android:textColor="@color/item_value_text_color"
+                        android:textColor="?attr/colorOnPrimary"
                         android:textSize="@dimen/sold_details_value_textSize"
                         android:textStyle="bold"
                         tools:text="$100.00" />
@@ -226,7 +226,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="@dimen/address_details_marginTop"
                     android:paddingBottom="@dimen/address_details_marginTop"
-                    android:textColor="@color/item_value_text_color"
+                    android:textColor="?attr/colorOnPrimary"
                     android:textSize="@dimen/address_details_textSize"
                     android:textStyle="bold"
                     tools:text="Home" />
@@ -235,7 +235,7 @@
                     android:id="@+id/tv_sold_details_full_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/item_value_text_color"
+                    android:textColor="?attr/colorOnPrimary"
                     android:textSize="@dimen/item_address_name_textSize"
                     tools:text="Denis Panjuta" />
 
@@ -244,7 +244,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/address_details_marginTop"
-                    android:textColor="@color/item_value_text_color"
+                    android:textColor="?attr/colorOnPrimary"
                     android:textSize="@dimen/address_details_textSize"
                     tools:text="XYZ" />
 
@@ -253,7 +253,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/address_details_marginTop"
-                    android:textColor="@color/item_value_text_color"
+                    android:textColor="?attr/colorOnPrimary"
                     android:textSize="@dimen/address_details_textSize"
                     tools:text="XYZ" />
 
@@ -262,7 +262,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/address_details_marginTop"
-                    android:textColor="@color/item_value_text_color"
+                    android:textColor="?attr/colorOnPrimary"
                     android:textSize="@dimen/address_details_textSize"
                     tools:text="XYZ" />
 
@@ -271,7 +271,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/address_details_marginTop"
-                    android:textColor="@color/item_value_text_color"
+                    android:textColor="?attr/colorOnPrimary"
                     android:textSize="@dimen/address_details_textSize"
                     tools:text="+64 123456789" />
             </LinearLayout>

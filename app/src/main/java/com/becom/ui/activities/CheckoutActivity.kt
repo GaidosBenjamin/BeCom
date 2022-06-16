@@ -143,7 +143,7 @@ class CheckoutActivity : BaseActivity() {
     fun allDetailsUpdatedSuccessfully() {
         hideProgressDialog()
 
-        Toast.makeText(this@CheckoutActivity, "Your order placed successfully.", Toast.LENGTH_SHORT)
+        Toast.makeText(this@CheckoutActivity, resources.getString(R.string.msg_success_order), Toast.LENGTH_SHORT)
             .show()
 
         val intent = Intent(this@CheckoutActivity, DashboardActivity::class.java)

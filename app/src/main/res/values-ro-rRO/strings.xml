@@ -132,4 +132,5 @@
     <string name="title_sold_products">Produsele vândute</string>
     <string name="no_products_sold_out_yet">Niciun produs vândut!</string>
     <string name="title_sold_product_details">Detaliile produsului vândut</string>
+    <string name="msg_success_order">Comanda plasată cu succes!</string>
 </resources>

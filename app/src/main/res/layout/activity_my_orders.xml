@@ -182,7 +182,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="@dimen/address_details_marginTop"
                     android:paddingBottom="@dimen/address_details_marginTop"
-                    android:textColor="@color/item_value_text_color"
+                    android:textColor="?attr/colorOnPrimary"
                     android:textSize="@dimen/address_details_textSize"
                     android:textStyle="bold"
                     tools:text="Home" />
@@ -191,7 +191,7 @@
                     android:id="@+id/tv_my_order_details_full_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/item_value_text_color"
+                    android:textColor="?attr/colorOnPrimary"
                     android:textSize="@dimen/item_address_name_textSize"
                     tools:text="Denis Panjuta" />
 
@@ -200,7 +200,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/address_details_marginTop"
-                    android:textColor="@color/item_value_text_color"
+                    android:textColor="?attr/colorOnPrimary"
                     android:textSize="@dimen/address_details_textSize"
                     tools:text="XYZ" />
 
@@ -209,7 +209,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/address_details_marginTop"
-                    android:textColor="@color/item_value_text_color"
+                    android:textColor="?attr/colorOnPrimary"
                     android:textSize="@dimen/address_details_textSize"
                     tools:text="XYZ" />
 
@@ -218,7 +218,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/address_details_marginTop"
-                    android:textColor="@color/item_value_text_color"
+                    android:textColor="?attr/colorOnPrimary"
                     android:textSize="@dimen/address_details_textSize"
                     tools:text="XYZ" />
 
@@ -227,7 +227,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/address_details_marginTop"
-                    android:textColor="@color/item_value_text_color"
+                    android:textColor="?attr/colorOnPrimary"
                     android:textSize="@dimen/address_details_textSize"
                     tools:text="+64 123456789" />
             </LinearLayout>
@@ -339,7 +339,7 @@
                     android:layout_marginStart="@dimen/my_order_details_content_marginStartEnd"
                     android:layout_weight="1"
                     android:text="@string/lbl_payment_mode"
-                    android:textColor="@color/item_value_text_color"
+                    android:textColor="?attr/colorOnPrimary"
                     android:textSize="@dimen/lbl_order_details_textSize" />
 
                 <com.becom.utils.BCTextView
