@@ -60,8 +60,8 @@ class SoldProductDetailsActivity : BaseActivity() {
         }
         tv_sold_details_mobile_number.text = productDetails.address.mobileNumber
 
-        tv_sold_product_sub_total.text = productDetails.sub_total_amount
-        tv_sold_product_shipping_charge.text = productDetails.shipping_charge
-        tv_sold_product_total_amount.text = productDetails.total_amount
+        tv_sold_product_sub_total.text = "${productDetails.sub_total_amount} ${resources.getString(R.string.currency)}"
+        tv_sold_product_shipping_charge.text = "${productDetails.shipping_charge} ${resources.getString(R.string.currency)}"
+        tv_sold_product_total_amount.text = "${productDetails.total_amount} ${resources.getString(R.string.currency)}"
     }
 }
