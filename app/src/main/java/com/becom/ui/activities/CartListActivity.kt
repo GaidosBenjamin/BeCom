@@ -1,5 +1,6 @@
 package com.becom.ui.activities
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -46,6 +47,7 @@ class CartListActivity : BaseActivity() {
         toolbar_cart_list_activity.setNavigationOnClickListener { onBackPressed() }
     }
 
+    @SuppressLint("SetTextI18n")
     fun successCartItemsList(cartList: ArrayList<CartItem>) {
         hideProgressDialog()
 
@@ -82,14 +84,14 @@ class CartListActivity : BaseActivity() {
                     subTotal += (price * quantity)
                 }
             }
-            tv_sub_total.text = "$${subTotal}"
-            tv_shipping_charge.text = "$5.0"
+            tv_sub_total.text = "$subTotal ${resources.getString(R.string.currency)}"
+            tv_shipping_charge.text = "10.0 ${resources.getString(R.string.currency)}"
 
             if(subTotal > 0) {
                 ll_checkout.visibility = View.VISIBLE
 
                 val total = subTotal + 10
-                tv_total_amount.text = "$${total}"
+                tv_total_amount.text = "$total ${resources.getString(R.string.currency)}"
             } else {
                 ll_checkout.visibility = View.GONE
             }

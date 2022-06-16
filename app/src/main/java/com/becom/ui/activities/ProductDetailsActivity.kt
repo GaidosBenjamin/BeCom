@@ -51,7 +51,7 @@ class ProductDetailsActivity : BaseActivity(), View.OnClickListener {
         GlideLoader(this@ProductDetailsActivity).loadProductPicture(product.image, iv_product_detail_image)
 
         tv_product_details_title.text = product.title
-        tv_product_details_price.text = "$${product.price}"
+        tv_product_details_price.text = "${product.price} ${resources.getString(R.string.currency)}"
         tv_product_details_description.text = product.description
         tv_product_details_stock_quantity.text = product.stock_quantity
 

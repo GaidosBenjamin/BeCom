@@ -43,7 +43,7 @@ class SoldProductDetailsActivity : BaseActivity() {
             iv_product_item_image
         )
         tv_product_item_name.text = productDetails.title
-        tv_product_item_price.text ="$${productDetails.price}"
+        tv_product_item_price.text ="${productDetails.price} ${resources.getString(R.string.currency)}"
         tv_sold_product_quantity.text = productDetails.sold_quantity
 
         tv_sold_details_address_type.text = productDetails.address.type

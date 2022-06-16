@@ -104,14 +104,14 @@ class CheckoutActivity : BaseActivity() {
             }
         }
 
-        tv_checkout_sub_total.text = "$$mSubTotal"
-        tv_checkout_shipping_charge.text = "$10.0"
+        tv_checkout_sub_total.text = "$mSubTotal ${resources.getString(R.string.currency)}"
+        tv_checkout_shipping_charge.text = "10.0 ${resources.getString(R.string.currency)}"
 
         if (mSubTotal > 0) {
             ll_checkout_place_order.visibility = View.VISIBLE
 
             mTotalAmount = mSubTotal + 10.0
-            tv_checkout_total_amount.text = "$$mTotalAmount"
+            tv_checkout_total_amount.text = "$mTotalAmount ${resources.getString(R.string.currency)}"
         } else {
             ll_checkout_place_order.visibility = View.GONE
         }

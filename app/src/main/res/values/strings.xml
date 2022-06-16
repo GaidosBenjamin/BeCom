@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">BeCom</string>
+    <string name="currency">$</string>
     <string name="content_description">image</string>
     <string name="title_login">Login</string>
-    <string name="et_hint_email_id">email</string>
+    <string name="et_hint_email_id" translatable="false">email</string>
     <string name="et_hint_password">password</string>
     <string name="lbl_forgot_password">Forgot Password?</string>
     <string name="btn_lbl_login">Login</string>

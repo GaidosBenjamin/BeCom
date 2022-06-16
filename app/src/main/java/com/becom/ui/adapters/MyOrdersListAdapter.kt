@@ -40,7 +40,7 @@ open class MyOrdersListAdapter(
             )
 
             holder.itemView.tv_item_name.text = model.title
-            holder.itemView.tv_item_price.text = "$${model.total_amount}"
+            holder.itemView.tv_item_price.text = "${model.total_amount} ${context.resources.getString(R.string.currency)}"
 
             holder.itemView.ib_delete_product.visibility = View.GONE
 

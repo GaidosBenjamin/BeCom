@@ -36,7 +36,7 @@ open class MyProductsListAdapter (private val context: Context,
         if(holder is MyViewHolder) {
             GlideLoader(context).loadProductPicture(model.image, holder.itemView.iv_item_image)
             holder.itemView.tv_item_name.text = model.title
-            holder.itemView.tv_item_price.text = "$${model.price}"
+            holder.itemView.tv_item_price.text = "${model.price} ${context.resources.getString(R.string.currency)}"
 
             holder.itemView.ib_delete_product.setOnClickListener {
                 fragment.deleteProduct(model.product_id)

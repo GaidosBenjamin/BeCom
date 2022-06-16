@@ -62,7 +62,6 @@ class LoginActivity : BaseActivity() {
     private fun logInUser() {
 
         if(validateLoginDetails()) {
-            showProgressDialog()
 
             val email: String = editTextToString(findViewById(R.id.et_email))
             val password: String = editTextToString(findViewById(R.id.et_password))
@@ -72,7 +71,6 @@ class LoginActivity : BaseActivity() {
                     if(task.isSuccessful) {
                         FirestoreClass().getUserDetails(this@LoginActivity)
                     } else {
-                        hideProgressDialog()
                         showErrorSnackBar(resources.getString(R.string.err_msg_login), true)
                     }
                 }
@@ -80,7 +78,6 @@ class LoginActivity : BaseActivity() {
     }
 
     fun userLoggedInSuccess(user: User) {
-        hideProgressDialog()
 
         Log.i("email", user.email)
         Log.i("profileCompleted", user.profileCompleted.toString())
