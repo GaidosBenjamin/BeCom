@@ -83,8 +83,6 @@ class RegisterActivity : BaseActivity() {
     private fun registerUser() {
         if(validateRegisterDetails()) {
 
-            showProgressDialog()
-
             val email: String = editTextToString(findViewById(R.id.et_email))
             val password: String = editTextToString(findViewById(R.id.et_password))
             val firstName: String = editTextToString(findViewById(R.id.et_first_name))
@@ -100,6 +98,7 @@ class RegisterActivity : BaseActivity() {
                         FirestoreClass().registerUser(this@RegisterActivity, user)
 
                         FirebaseAuth.getInstance().signOut()
+                        startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
                         finish()
                     } else {
                         hideProgressDialog()
@@ -110,6 +109,5 @@ class RegisterActivity : BaseActivity() {
     }
 
     fun userRegistrationSuccess() {
-        hideProgressDialog()
     }
 }
