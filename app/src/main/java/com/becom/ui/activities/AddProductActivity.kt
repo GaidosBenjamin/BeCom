@@ -6,22 +6,19 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
-import android.widget.ImageView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.becom.R
 import com.becom.firestore.FirestoreClass
 import com.becom.model.Product
-import com.becom.utils.BCEditText
+import com.becom.utils.views.BCEditText
 import com.becom.utils.Constants
 import com.becom.utils.GlideLoader
 import kotlinx.android.synthetic.main.activity_add_product.*
-import kotlinx.android.synthetic.main.activity_settings.*
 import java.io.IOException
 
 class AddProductActivity : BaseActivity(), View.OnClickListener {

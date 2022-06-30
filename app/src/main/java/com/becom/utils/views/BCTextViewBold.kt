@@ -1,11 +1,11 @@
-package com.becom.utils
+package com.becom.utils.views
 
 import android.content.Context
 import android.graphics.Typeface
 import android.util.AttributeSet
-import androidx.appcompat.widget.AppCompatButton
+import androidx.appcompat.widget.AppCompatTextView
 
-class BCButton(context: Context, attrs: AttributeSet) : AppCompatButton(context, attrs) {
+class BCTextViewBold(context: Context, attrs: AttributeSet) : AppCompatTextView(context, attrs) {
 
     init {
         applyFont()
@@ -15,5 +15,4 @@ class BCButton(context: Context, attrs: AttributeSet) : AppCompatButton(context,
         val typeface: Typeface = Typeface.createFromAsset(context.assets, "Montserrat-Bold.ttf")
         setTypeface(typeface)
     }
-
 }

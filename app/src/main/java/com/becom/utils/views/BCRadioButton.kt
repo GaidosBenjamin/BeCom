@@ -1,11 +1,11 @@
-package com.becom.utils
+package com.becom.utils.views
 
 import android.content.Context
 import android.graphics.Typeface
 import android.util.AttributeSet
-import androidx.appcompat.widget.AppCompatEditText
+import androidx.appcompat.widget.AppCompatRadioButton
 
-class BCEditText(context: Context, attrs: AttributeSet) : AppCompatEditText(context, attrs) {
+class BCRadioButton(context: Context, attributeSet: AttributeSet): AppCompatRadioButton(context, attributeSet) {
 
     init {
         applyFont()

@@ -8,6 +8,10 @@ import com.becom.R
 import com.becom.firestore.FirestoreClass
 import com.becom.model.User
 import com.becom.utils.*
+import com.becom.utils.views.BCButton
+import com.becom.utils.views.BCEditText
+import com.becom.utils.views.BCTextView
+import com.becom.utils.views.BCTextViewBold
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : BaseActivity() {

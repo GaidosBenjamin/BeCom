@@ -3,8 +3,8 @@ package com.becom.ui.activities
 import android.os.Bundle
 import android.widget.Toast
 import com.becom.R
-import com.becom.utils.BCButton
-import com.becom.utils.BCEditText
+import com.becom.utils.views.BCButton
+import com.becom.utils.views.BCEditText
 import com.google.firebase.auth.FirebaseAuth
 
 class ForgotPasswordActivity : BaseActivity() {

@@ -1,14 +1,13 @@
 package com.becom.ui.activities
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.becom.R
 import com.becom.firestore.FirestoreClass
 import com.becom.model.User
-import com.becom.utils.BCTextView
-import com.becom.utils.BCTextViewBold
+import com.becom.utils.views.BCTextView
+import com.becom.utils.views.BCTextViewBold
 import com.becom.utils.Constants
 import com.becom.utils.GlideLoader
 import com.google.firebase.auth.FirebaseAuth

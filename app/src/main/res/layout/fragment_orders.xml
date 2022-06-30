@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.becom.utils.BCTextView
+    <com.becom.utils.views.BCTextView
         android:id="@+id/tv_no_orders_found"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

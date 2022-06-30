@@ -1,12 +1,10 @@
 package com.becom.ui.activities
 
-import android.annotation.SuppressLint
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import com.becom.R
-import com.becom.utils.BCTextView
+import com.becom.utils.views.BCTextView
 import com.becom.utils.Constants
 
 class MainActivity : AppCompatActivity() {

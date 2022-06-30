@@ -17,7 +17,7 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <com.becom.utils.BCTextViewBold
+        <com.becom.utils.views.BCTextViewBold
             android:id="@+id/tv_address_full_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -26,7 +26,7 @@
             android:textSize="@dimen/item_address_name_textSize"
             tools:text="Denis Panjuta" />
 
-        <com.becom.utils.BCTextView
+        <com.becom.utils.views.BCTextView
             android:id="@+id/tv_address_type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             tools:text="Home" />
     </LinearLayout>
 
-    <com.becom.utils.BCTextView
+    <com.becom.utils.views.BCTextView
         android:id="@+id/tv_address_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
         android:textSize="@dimen/address_details_textSize"
         tools:text="XYZ" />
 
-    <com.becom.utils.BCTextView
+    <com.becom.utils.views.BCTextView
         android:id="@+id/tv_address_mobile_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

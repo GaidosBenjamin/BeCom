@@ -8,7 +8,7 @@
     android:orientation="horizontal"
     android:padding="@dimen/progress_dialog_content_padding">
 
-    <com.becom.utils.BCTextView
+    <com.becom.utils.views.BCTextView
         android:id="@+id/tv_progress_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

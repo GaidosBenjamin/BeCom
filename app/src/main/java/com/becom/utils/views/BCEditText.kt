@@ -1,11 +1,11 @@
-package com.becom.utils
+package com.becom.utils.views
 
 import android.content.Context
 import android.graphics.Typeface
 import android.util.AttributeSet
-import androidx.appcompat.widget.AppCompatTextView
+import androidx.appcompat.widget.AppCompatEditText
 
-class BCTextViewBold(context: Context, attrs: AttributeSet) : AppCompatTextView(context, attrs) {
+class BCEditText(context: Context, attrs: AttributeSet) : AppCompatEditText(context, attrs) {
 
     init {
         applyFont()

@@ -1,4 +1,4 @@
-package com.becom.utils
+package com.becom.utils.views
 
 import android.content.Context
 import android.graphics.Typeface

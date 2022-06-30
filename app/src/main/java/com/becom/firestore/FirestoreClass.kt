@@ -39,11 +39,9 @@ class FirestoreClass {
 
     fun getCurrentUserId(): String {
         val currentUser = FirebaseAuth.getInstance().currentUser
-
         if(currentUser != null) {
             return currentUser.uid
         }
-
         return ""
     }
 
@@ -70,10 +68,9 @@ class FirestoreClass {
                         activity.hideProgressDialog()
                     }
                     is SettingsActivity -> {
-                        //activity.hideProgressDialog()
+                        activity.hideProgressDialog()
                     }
                 }
-
                 Log.e(activity.javaClass.simpleName, "Error while getting user details.", ex)
             }
     }
@@ -110,7 +107,6 @@ class FirestoreClass {
         val sRef: StorageReference = FirebaseStorage.getInstance().reference.child(
             imageType + System.currentTimeMillis() + "." + Constants.getFileExtension(activity, imageFileUri)
         )
-
         sRef.putFile(imageFileUri!!)
             .addOnSuccessListener { taskSnapshot ->
                 Log.i("Firebase Image URL", taskSnapshot.metadata!!.reference!!.downloadUrl.toString())

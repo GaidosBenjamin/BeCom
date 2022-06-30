@@ -22,7 +22,7 @@
             android:scaleType="fitXY"
             android:src="@drawable/auth_screens_background" />
 
-        <com.becom.utils.BCTextViewBold
+        <com.becom.utils.views.BCTextViewBold
             android:id="@+id/tv_login_app_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
 
     </FrameLayout>
     
-    <com.becom.utils.BCTextViewBold
+    <com.becom.utils.views.BCTextViewBold
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_title">
 
-        <com.becom.utils.BCEditText
+        <com.becom.utils.views.BCEditText
             android:id="@+id/et_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/til_email">
 
-        <com.becom.utils.BCEditText
+        <com.becom.utils.views.BCEditText
             android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.becom.utils.BCTextView
+    <com.becom.utils.views.BCTextView
         android:id="@+id/tv_forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -110,7 +110,7 @@
         android:foreground="?attr/selectableItemBackground"
         app:layout_constraintTop_toBottomOf="@id/til_password" />
 
-    <com.becom.utils.BCButton
+    <com.becom.utils.views.BCButton
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -140,7 +140,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_login">
 
-        <com.becom.utils.BCTextView
+        <com.becom.utils.views.BCTextView
             android:id="@+id/tv_don_t_have_an_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -150,7 +150,7 @@
             android:textColor="?attr/colorOnPrimary"
             android:textSize="@dimen/lbl_text_view_textSize" />
 
-        <com.becom.utils.BCTextViewBold
+        <com.becom.utils.views.BCTextViewBold
             android:id="@+id/tv_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -16,6 +16,9 @@ import com.becom.R
 import com.becom.firestore.FirestoreClass
 import com.becom.model.User
 import com.becom.utils.*
+import com.becom.utils.views.BCButton
+import com.becom.utils.views.BCEditText
+import com.becom.utils.views.BCRadioButton
 import kotlinx.android.synthetic.main.activity_user_profile.*
 import java.io.IOException
 

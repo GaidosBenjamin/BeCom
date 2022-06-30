@@ -43,7 +43,7 @@
         android:paddingEnd="@dimen/dashboard_item_paddingStartEnd"
         android:paddingBottom="@dimen/dashboard_item_paddingTopBottom">
 
-        <com.becom.utils.BCTextViewBold
+        <com.becom.utils.views.BCTextViewBold
             android:id="@+id/tv_dashboard_item_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
             android:textStyle="bold"
             tools:text="Item Name" />
 
-        <com.becom.utils.BCTextView
+        <com.becom.utils.views.BCTextView
             android:id="@+id/tv_dashboard_item_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

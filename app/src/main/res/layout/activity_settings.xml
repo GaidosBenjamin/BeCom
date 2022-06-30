@@ -70,7 +70,7 @@
                 android:background="@drawable/ic_user_background" />
         </FrameLayout>
 
-        <com.becom.utils.BCTextView
+        <com.becom.utils.views.BCTextView
             android:id="@+id/tv_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
             android:textColor="?attr/colorOnSecondary"
             android:textSize="@dimen/settings_edit_label_textSize" />
 
-        <com.becom.utils.BCTextViewBold
+        <com.becom.utils.views.BCTextViewBold
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
             android:textSize="@dimen/settings_name_textSize"
             tools:text="Benji" />
 
-        <com.becom.utils.BCTextView
+        <com.becom.utils.views.BCTextView
             android:id="@+id/tv_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
             android:textSize="@dimen/settings_info_textSize"
             tools:text="Male" />
 
-        <com.becom.utils.BCTextView
+        <com.becom.utils.views.BCTextView
             android:id="@+id/tv_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -120,7 +120,7 @@
             android:textSize="@dimen/settings_info_textSize"
             tools:text="benji@gmail.com" />
 
-        <com.becom.utils.BCTextView
+        <com.becom.utils.views.BCTextView
             android:id="@+id/tv_mobile_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -145,7 +145,7 @@
             android:orientation="horizontal"
             android:padding="@dimen/settings_address_padding">
 
-            <com.becom.utils.BCTextView
+            <com.becom.utils.views.BCTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/settings_lbl_addresses_margin"
@@ -162,7 +162,7 @@
 
         </LinearLayout>
 
-        <com.becom.utils.BCButton
+        <com.becom.utils.views.BCButton
             android:id="@+id/btn_logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

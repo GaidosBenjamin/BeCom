@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.becom.utils.BCTextView
+            <com.becom.utils.views.BCTextView
                 android:id="@+id/tv_product_items"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_product_items" />
 
-            <com.becom.utils.BCTextView
+            <com.becom.utils.views.BCTextView
                 android:id="@+id/tv_selected_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
                 android:paddingEnd="@dimen/checkout_content_paddingStartEnd"
                 android:paddingBottom="@dimen/checkout_content_paddingTopBottom">
 
-                <com.becom.utils.BCTextView
+                <com.becom.utils.views.BCTextView
                     android:id="@+id/tv_checkout_address_type"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                     android:textStyle="bold"
                     tools:text="Home" />
 
-                <com.becom.utils.BCTextView
+                <com.becom.utils.views.BCTextView
                     android:id="@+id/tv_checkout_full_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
                     android:textSize="@dimen/item_address_name_textSize"
                     tools:text="Denis Panjuta" />
 
-                <com.becom.utils.BCTextView
+                <com.becom.utils.views.BCTextView
                     android:id="@+id/tv_checkout_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
                     android:textSize="@dimen/address_details_textSize"
                     tools:text="XYZ" />
 
-                <com.becom.utils.BCTextView
+                <com.becom.utils.views.BCTextView
                     android:id="@+id/tv_checkout_additional_note"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -123,7 +123,7 @@
                     android:textSize="@dimen/address_details_textSize"
                     tools:text="XYZ" />
 
-                <com.becom.utils.BCTextView
+                <com.becom.utils.views.BCTextView
                     android:id="@+id/tv_checkout_other_details"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
                     android:textSize="@dimen/address_details_textSize"
                     tools:text="XYZ" />
 
-                <com.becom.utils.BCTextView
+                <com.becom.utils.views.BCTextView
                     android:id="@+id/tv_checkout_mobile_number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -142,7 +142,7 @@
                     tools:text="+64 123456789" />
             </LinearLayout>
 
-            <com.becom.utils.BCTextView
+            <com.becom.utils.views.BCTextView
                 android:id="@+id/tv_items_receipt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -170,7 +170,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.becom.utils.BCTextView
+                    <com.becom.utils.views.BCTextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -178,7 +178,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textSize="@dimen/checkout_label_value_textSize" />
 
-                    <com.becom.utils.BCTextView
+                    <com.becom.utils.views.BCTextView
                         android:id="@+id/tv_checkout_sub_total"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -193,7 +193,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.becom.utils.BCTextView
+                    <com.becom.utils.views.BCTextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -201,7 +201,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textSize="@dimen/checkout_label_value_textSize" />
 
-                    <com.becom.utils.BCTextView
+                    <com.becom.utils.views.BCTextView
                         android:id="@+id/tv_checkout_shipping_charge"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -216,7 +216,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <com.becom.utils.BCTextView
+                    <com.becom.utils.views.BCTextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -224,7 +224,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textSize="@dimen/checkout_label_value_textSize" />
 
-                    <com.becom.utils.BCTextView
+                    <com.becom.utils.views.BCTextView
                         android:id="@+id/tv_checkout_total_amount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -255,7 +255,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.becom.utils.BCTextView
+            <com.becom.utils.views.BCTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -263,7 +263,7 @@
                 android:textColor="?attr/colorOnPrimary"
                 android:textSize="@dimen/checkout_label_value_textSize" />
 
-            <com.becom.utils.BCTextView
+            <com.becom.utils.views.BCTextView
                 android:id="@+id/tv_payment_mode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -273,7 +273,7 @@
                 android:textSize="@dimen/checkout_label_value_textSize" />
         </LinearLayout>
 
-        <com.becom.utils.BCButton
+        <com.becom.utils.views.BCButton
             android:id="@+id/btn_place_order"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

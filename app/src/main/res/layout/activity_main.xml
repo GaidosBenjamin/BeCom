@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.activities.MainActivity">
 
-    <com.becom.utils.BCTextView
+    <com.becom.utils.views.BCTextView
         android:id="@+id/tv_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

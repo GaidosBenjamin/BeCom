@@ -3,14 +3,13 @@ package com.becom.ui.activities
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
-import android.widget.Toast
 import androidx.appcompat.widget.AppCompatCheckBox
 import com.becom.R
 import com.becom.firestore.FirestoreClass
 import com.becom.model.User
-import com.becom.utils.BCButton
-import com.becom.utils.BCEditText
-import com.becom.utils.BCTextViewBold
+import com.becom.utils.views.BCButton
+import com.becom.utils.views.BCEditText
+import com.becom.utils.views.BCTextViewBold
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 
